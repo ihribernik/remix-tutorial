@@ -15,6 +15,7 @@ export const loader: LoaderFunction = async ({
   }
   return json({ contact });
 };
+
 export default function Contact() {
   const { contact } = useLoaderData<typeof loader>();
 
